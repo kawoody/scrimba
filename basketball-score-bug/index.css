@@ -1,0 +1,136 @@
+:root {
+    --font-team: 'Bungee', cursive;
+    --font-score: 'Nabla', cursive;
+    --font-button: 'Barlow Condensed', sans-serif;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #1B244A;
+    background-image: linear-gradient(
+                        110deg,
+                        hsl(240deg 100% 20%) 1%,
+                        hsl(289deg 100% 21%) 43%,
+                        hsl(315deg 100% 27%) 50%,
+                        hsl(329deg 100% 36%) 51%,
+                        hsl(337deg 100% 43%) 51%,
+                        hsl(357deg 91% 59%) 49%,
+                        hsl(17deg 100% 59%) 49%,
+                        hsl(34deg 100% 53%) 50%,
+                        hsl(45deg 100% 50%) 57%,
+                        hsl(55deg 100% 50%) 99%
+                        );
+    color: white;
+    font-family: var(--font-team);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 3rem;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    background: rgba(255,0,0,0.25);
+    border-radius: 2em;
+}
+
+.container > div {
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: .25rem;
+    text-shadow: 0 3px 3px black;
+}
+
+.small-shadow {
+    text-shadow: 0 2px 1px black;
+}
+
+.qtr-heading {
+    margin: 0;
+    margin-bottom: .25em;
+}
+
+.super {
+    display: inline-block;
+    margin-left: .05em;
+    font-size: .75em;
+}
+
+.game-info > div {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qtr-display,
+.score-display {
+    background: #080001;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.score-display {
+    padding: .25em 0;
+    margin-bottom: .5rem;
+    font-size: 4em;
+    font-family: var(--font-score);
+}
+
+.qtr-display {
+    font-size: 1.5em;
+    padding: .5em .75em;
+    font-family: var(--font-button);
+    text-transform: uppercase;
+    width: 3em;
+}
+
+.score-btns {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5em;
+}
+
+button {
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background: #080001;
+    color: #9AABD8;
+    font-size: 1.25em;
+    padding: .5em;
+    font-family: var(--font-button);
+    box-shadow: 0 3px 3px rgba(0,0,0,.5);
+}
+
+button::selection {
+    background: none;
+}
+
+.foul-btn {
+    width: 100%;
+    padding: .25em 0;
+}
+
+.leader {
+    box-shadow: inset 0 0 8px 10px hsl(337deg 100% 43%);
+}

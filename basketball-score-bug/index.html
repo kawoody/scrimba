@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Score Bug</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&family=Bungee&family=Nabla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <div id="home">
+                <h3>HOME</h3>
+                <div id="score-home" class="score-display">0</div>
+                <div class="score-btns home-btns">
+                    <button id="btn-home-1" class="score-btn">+1</button>
+                    <button id="btn-home-2" class="score-btn">+2</button>
+                    <button id="btn-home-3" class="score-btn">+3</button>
+                </div>
+                <!-- <button id="foul-home" class="foul-btn">Foul</button> -->
+            </div> <!-- /.home -->
+            
+            <div id="game-info" class="game-info">
+                <div class="quarter">
+                    <p class="qtr-heading small-shadow">QTR</p>
+                    <div id="qtr-display" class="qtr-display">1<span class="super">st</span></div>
+                </div>
+                <div id="reset" class="reset small-shadow">New Game</div>
+            </div> <!-- /.quarter -->
+            
+            <div id="visitor">
+                <h3>GUEST</h3>
+                <div id="score-visitor" class="score-display">0</div>
+                <div class="score-btns visitor-btns">
+                    <button id="btn-visitor-1" class="score-btn">+1</button>
+                    <button id="btn-visitor-2" class="score-btn">+2</button>
+                    <button id="btn-visitor-3" class="score-btn">+3</button>
+                </div>
+                <!-- <button id="foul-visitor" class="foul-btn">Foul</button> -->
+            </div> <!-- /.visitor -->
+            
+        </div> <!-- /.container -->
+        <script src="index.js"></script>
+    </body>
+</html>

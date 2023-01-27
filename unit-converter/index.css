@@ -1,0 +1,96 @@
+html * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TYPOGRAPHY */
+
+h2, h3, p {
+    margin: 0;
+}
+
+h3, p {
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+h3 {
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.the-number-display {
+    font-size: 96px;
+    font-weight: 800;
+}
+
+.conversions p {
+    color: #D2D2D2;
+}
+
+.conversions p:not(:last-child) {
+    margin-bottom: 2.5em;
+}
+
+/* LAYOUT */
+
+.conversion-widget {
+    width: 50%;
+    min-width: 550px;
+    margin: 0 auto;
+}
+
+.display {
+    background: pink;
+    background-image: linear-gradient(45deg, #585DFE, #FB3796);
+    padding: 3em;
+}
+
+.conversions {
+    background: #1F2937;
+    padding: 3em;
+}
+
+/* INPUT FIELD */
+
+.the-number-input {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Turn off stepper arrows in the input field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

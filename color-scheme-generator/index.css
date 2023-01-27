@@ -1,0 +1,98 @@
+/* 
+font-family: 'Inter', sans-serif;
+font weights available: 400, 500, 600
+*/
+
+html * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #33313A;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-widget-container {
+    width: 550px;
+    background: #fff;
+}
+
+/* COLOR WIDGET HEADER */
+
+.color-widget-header {
+    display: grid;
+    grid-template-columns: 1fr 7fr 3fr;
+    grid-gap: .75em;
+    padding: 1.25em 1em;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+.seed-color,
+.color-scheme-select,
+.color-scheme-btn {
+    cursor: pointer;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.seed-color {
+    background: #e5e5e5;
+    height: auto;
+    width: 4em;
+}
+
+.color-scheme-select,
+.color-scheme-btn {
+    background: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.color-scheme-select {
+    border-radius: 6px;
+    padding: .75em .25em;
+}
+
+option {
+    
+}
+
+.active-color-scheme {
+    font-weight: 600;
+}
+
+.color-scheme-btn {
+    font-size: .75em;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 0;
+}
+
+/* COLOR SCHEME */
+
+.color-scheme-output {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 400px 1fr;
+    grid-auto-flow: column;
+}
+
+.color {
+    background: #ccc;
+}
+
+.hex {
+    font-size: .75em;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5em 0;
+}

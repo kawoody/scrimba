@@ -1,0 +1,27 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="widget-container">
+            <div class="widget-header">
+                <h1>Find your film</h1>
+                <a href="watchlist.html">My Watchlist</a>
+                <form class="search-bar">
+                    <input id="search-input" type="search" placeholder="Search for a movie">
+                    <button id="search-btn" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="widget-body">
+                <div class="movie-list movie-list-empty" id="movie-list">
+                    <img src="img/film-strip.svg" class="empty-movie-list-img">
+                    <h2>Start exploring</h2>
+                </div>
+            </div>
+        </div> <!-- .widget-container -->
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
