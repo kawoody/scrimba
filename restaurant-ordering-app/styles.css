@@ -202,6 +202,7 @@ main {
     display: none;
     
     width: 85%;
+    max-width: 600px;
     height: max-content;
     background: white;
     
