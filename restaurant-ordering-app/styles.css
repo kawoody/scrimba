@@ -1,0 +1,281 @@
+:root {
+    --font-fun: 'Smythe', cursive;
+    --font-plain: 'Lato', sans-serif;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: var(--font-fun);
+    box-shadow: 0 0 50px black;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2 {
+    margin: 0;
+}
+
+.restaurant-name {
+    font-size: 2.4375em;
+}
+
+.slogan {
+    font-size: 1.375em;
+}
+
+p {
+    margin: 0;
+}
+
+.item-name,
+.order-item-name,
+.order-total > :first-child {
+    font-size: 1.75em;
+}
+
+.item-ingredients {
+    color: #8b8b8b;
+}
+
+.item-price,
+.order-item-price,
+.order-total-price {
+    font-size: 1.25em;
+}
+
+.order-status > h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* BTNS */
+
+.add-to-order-btn {
+    font-size: 2.5em;
+    transition: 50ms;
+}
+
+.btn:hover {
+    color: tomato;
+    transform: scale(110%);
+    opacity: 1;
+}
+
+.btn:active {
+    color: tomato;
+    transform: scale(100%);
+}
+
+.remove-item {
+    font-size: .75em;
+    opacity: .25;
+}
+
+/* BUTTONS */
+
+button {
+    width: 100%;
+    background: #16db99;
+    color: white;
+    font-family: var(--font-plain);
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+/* LAYOUT */
+
+header {
+    height: 10em;
+    
+    background-image: linear-gradient(to right, rgba(80,40,20,.75), rgba(0,0,0,0)), url('images/burger2.avif');
+    background-size: 150%;
+    background-position: 20% 50%;
+    
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 0 3em;
+    margin-bottom: 3rem;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+    header {
+        background-image: linear-gradient(to right, rgba(80,40,20,.75), rgba(0,0,0,0)), url('images/burger2.avif');
+        background-size: cover;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 5rem;
+    }
+}
+
+/* MENU */
+
+.menu {
+    margin-bottom: 2rem;
+}
+
+.menu-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    
+    padding: 2rem 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.menu-item-container:first-of-type {
+    padding-top: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.item-icon {
+    font-size: 4.875em;
+    opacity: .72;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .25rem;
+}
+
+/* ORDER */
+
+.order-status {
+    padding-bottom: 3rem;
+}
+
+.order-item,
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-item > div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.order-item {
+    margin-bottom: .5rem;
+}
+
+.order-items {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #393333;
+    margin-bottom: 1rem;
+}
+
+.order-total {
+    margin-bottom: 3em;
+}
+
+/* PAYMENT MODAL */
+
+.payment-modal {
+    display: none;
+    
+    width: 85%;
+    height: max-content;
+    background: white;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+    border-radius: 3px;
+    padding: 2.5rem 1.5rem 1.5rem;
+    
+    text-align: center;
+    
+    box-shadow: 0 0 200px black;
+}
+
+.payment-modal h2,
+.payment-modal input {
+    font-family: var(--font-plain);
+}
+
+.payment-modal h2 {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 1rem;
+    border: 1px solid #757575;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+input:last-of-type {
+    margin-bottom: 2rem;
+}
+
+#payment-modal-close {
+    font-size: 1.25em;
+    
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+/* PAID MESSAGE */
+
+.payment-msg {
+    background: #ECFDF5;
+    color: #065F46;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.rate-your-order {
+    font-size: 2em;
+    text-align: center;
+}
+
+.rate-your-order p {
+    margin-bottom: 1rem;
+}
+
+.rating:hover {
+    transform: scale(120%);
+}
